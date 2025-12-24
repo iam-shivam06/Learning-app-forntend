@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learnify | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Learnify</h2>
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<section class="welcome">
+  <h3 id="welcomeText"></h3>
+</section>
+
+<section class="courses">
+  <div class="card">
+    <h4>HTML Basics</h4>
+    <p>Progress: <span id="htmlProgress">0</span>%</p>
+    <button onclick="addProgress('html')">Complete Lesson</button>
+  </div>
+
+  <div class="card">
+    <h4>CSS Design</h4>
+    <p>Progress: <span id="cssProgress">0</span>%</p>
+    <button onclick="addProgress('css')">Complete Lesson</button>
+  </div>
+
+  <div class="card">
+    <h4>JavaScript</h4>
+    <p>Progress: <span id="jsProgress">0</span>%</p>
+    <button onclick="addProgress('js')">Complete Lesson</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
